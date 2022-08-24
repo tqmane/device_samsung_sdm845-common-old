@@ -25,3 +25,6 @@ wifi.direct.interface=p2p-dev-wlan0
 
 ### Pre-Rendering
 ro.vendor.perf.scroll_opt=true
+
+# Sysbta
+persist.bluetooth.system_audio_hal.enabled=1
