@@ -609,3 +609,6 @@ system/lib/libwfdaac.so
 system/lib/libremotedisplay_wfd.so
 system/app/BuiltInPrintService/lib/arm64/libwfds.so
 system/lib64/libwfds.so
+
+# Protobuf - from LineageOS 20
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
