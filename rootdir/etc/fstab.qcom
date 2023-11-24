@@ -1,12 +1,14 @@
 #<src>                                                 <mnt_point>               <type>  <mnt_flags and options>                               <fs_mgr_flags>
-/dev/block/by-name/system                               /system                   ext4    ro,barrier=1,discard                                 wait,slotselect,avb,first_stage_mount
-/dev/block/by-name/vendor                               /vendor                   ext4    ro,barrier=1,discard                                 wait,slotselect,avb,first_stage_mount
+/dev/block/bootdevice/by-name/system                    /system                   ext4    ro,barrier=1,discard                                 wait,slotselect,avb,first_stage_mount
+/dev/block/bootdevice/by-name/vendor                    /vendor                   ext4    ro,barrier=1,discard                                 wait,slotselect,avb,first_stage_mount
 /dev/block/bootdevice/by-name/cache                     /cache                    ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered  wait,check
 /dev/block/bootdevice/by-name/userdata                  /data                     ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered  wait,check,fileencryption=ice,quota,reservedsize=512M
 /dev/block/bootdevice/by-name/efs                       /mnt/vendor/efs           ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered  wait,check
 /dev/block/bootdevice/by-name/misc                      /misc                     emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/hidden                    /preload                  ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered  voldmanaged=preload:auto,check
-/devices/platform/soc/8804000.sdhci/mmc_host*           auto                      auto    defaults                                             voldmanaged=sdcard:auto
-/devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto*     /storage/usbotg     vfat    nosuid,nodev         wait,voldmanaged=usbotg:auto
+/dev/block/bootdevice/by-name/persist                   /mnt/vendor/persist       ext4    noatime,nosuid,nodev,barrier=1                       wait
+/dev/block/bootdevice/by-name/bluetooth                 /vendor/bt_firmware       vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait,slotselect
+/devices/platform/soc/8804000.sdhci/mmc_host/mmc*       auto                      vfat    defaults                                             voldmanaged=sdcard:auto
+/devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto/usb* auto  auto    defaults    voldmanaged=usb:auto
 /dev/block/zram0                                        none                      swap    defaults                                             zramsize=1073741824
 /dev/block/bootdevice/by-name/boot                      /boot                     emmc    defaults                                             recoveryonly
