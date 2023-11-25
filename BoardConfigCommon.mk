@@ -77,7 +77,6 @@ BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image/ loop.max
 
 TARGET_KERNEL_SOURCE := kernel/samsung/sdm845
 TARGET_KERNEL_CLANG_COMPILE := false
-TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld"
 TARGET_KERNEL_ADDITIONAL_FLAGS := \ DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 
 # Mkbootimg
