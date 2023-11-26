@@ -157,4 +157,8 @@ PRODUCT_COPY_FILES += \
 # APEX
 PRODUCT_COMPRESSED_APEX := false
 
+# Touch HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung
+
 $(call inherit-product, vendor/samsung/sdm845-common/sdm845-common-vendor.mk)
