@@ -161,4 +161,8 @@ PRODUCT_COMPRESSED_APEX := false
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 $(call inherit-product, vendor/samsung/sdm845-common/sdm845-common-vendor.mk)
