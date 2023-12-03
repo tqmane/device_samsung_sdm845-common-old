@@ -26,6 +26,11 @@
          non-interactive. -->
     <bool name="doze_display_state_supported">true</bool>
 
+     <!-- Battery health -->
+     <bool name="config_supportBatteryHealth">true</bool>
+     <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/bms/charge_full</string>
+     <string name="config_batteryDesignCapacity">/sys/class/power_supply/bms/charge_full_design</string>
+     <string name="config_batteryChargeCycles">/sys/class/power_supply/bms/cycle_count</string>
 
     <!-- Threshold in micro watts above which a charger is rated as "fast"; 2.16A @ 5V  -->
     <integer name="config_chargingFastThreshold">10800000</integer>
