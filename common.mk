@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    init.qcom.sh \
     init.class_main.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
@@ -116,8 +117,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
     init.samsung.rc \
-    init.usb_accessory.rc \
-    ueventd.qcom.rc \
+    init.msm.usb.configfs.rc
 
 # Recovery
 PRODUCT_PACKAGES += \
