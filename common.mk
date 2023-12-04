@@ -117,7 +117,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
     init.samsung.rc \
-    init.msm.usb.configfs.rc
+    init.msm.usb.configfs.rc \
+    ueventd.qcom.rc
 
 # Recovery
 PRODUCT_PACKAGES += \
