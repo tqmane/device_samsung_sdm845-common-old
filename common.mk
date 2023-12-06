@@ -117,13 +117,9 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
     init.samsung.rc \
-<<<<<<< HEAD
     init.msm.usb.configfs.rc \
-    ueventd.qcom.rc
-=======
-    init.usb_accessory.rc \
->>>>>>> 37341f8 (sdm845-common: rootdir: Fix UP!)
-
+    ueventd.rc
+    
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.sdm845.rc
