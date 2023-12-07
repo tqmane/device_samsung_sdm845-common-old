@@ -39,6 +39,9 @@ vendor/lib/libaudioparsers.so
 vendor/lib/libcsd-client.so
 vendor/lib/libqtigef.so
 vendor/lib/libsamsungVoipResampler.so
+-vendor/lib/libprofileparamstorage.so
+-vendor/lib/libsecaudiocoreutils.so
+-vendor/lib/soundfx/libswdap.so
 
 # Audio extensions
 vendor/lib/liba2dpoffload.so
