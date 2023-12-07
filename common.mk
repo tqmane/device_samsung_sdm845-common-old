@@ -192,4 +192,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+# Dolby Atmos
+ifeq ($(TARGET_HAVE_SAMSUNG_DAP),true)
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/audio/audio_effects_dap.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+
+PRODUCT_PACKAGES += \
+    SamsungDAP
+else
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+endif
+
 $(call inherit-product, vendor/samsung/sdm845-common/sdm845-common-vendor.mk)
