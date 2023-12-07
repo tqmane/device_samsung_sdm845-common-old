@@ -163,10 +163,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_audioparams
 
-# Dolby
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml 
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
