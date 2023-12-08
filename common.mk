@@ -113,10 +113,11 @@ PRODUCT_PACKAGES += \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
+    init.qcom.sh \
     fstab.qcom \
     init.qcom.rc \
     init.samsung.rc \
-    init.usb_accessory.rc \
+    init.msm.usb.configfs.rc \
     ueventd.qcom.rc
 
 # Recovery
