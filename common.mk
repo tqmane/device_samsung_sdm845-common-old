@@ -145,7 +145,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-     $(COMMON_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+     $(LOCAL_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
 
 # Aod & DT2W test
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
@@ -195,13 +195,13 @@ PRODUCT_PACKAGES += \
 # Dolby Atmos
 ifeq ($(TARGET_HAVE_SAMSUNG_DAP),true)
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/audio/audio_effects_dap.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+    $(LOCAL_PATH)/audio/audio_effects_dap.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 PRODUCT_PACKAGES += \
     SamsungDAP
 else
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 endif
 
 $(call inherit-product, vendor/samsung/sdm845-common/sdm845-common-vendor.mk)
