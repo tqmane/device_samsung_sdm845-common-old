@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-cherish
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -140,9 +140,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung \
     $(LOCAL_PATH)/aidl/power-libperfmgr
 
-# VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 29
-
 # Bluetooth
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
@@ -158,10 +155,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
-
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_audioparams
 
 # Audio
 PRODUCT_PACKAGES += \
