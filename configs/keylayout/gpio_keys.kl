@@ -16,6 +16,8 @@
 
 key 114   VOLUME_DOWN
 key 115   VOLUME_UP
+key 102   HOME
 key 116   POWER
 key 455   WAKEUP
 key 703   ASSIST
+key 766   CAMERA
