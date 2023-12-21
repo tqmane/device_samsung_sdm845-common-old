@@ -181,10 +181,6 @@ PRODUCT_COMPRESSED_APEX := false
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # Dolby Atmos
 ifeq ($(TARGET_HAVE_SAMSUNG_DAP),true)
 PRODUCT_COPY_FILES += \
