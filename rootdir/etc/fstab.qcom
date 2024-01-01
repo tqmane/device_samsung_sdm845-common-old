@@ -1,6 +1,8 @@
 #<src>                                                 <mnt_point>               <type>  <mnt_flags and options>                               <fs_mgr_flags>
+/dev/block/platform/soc/1d84000.ufshc/by-name/system                    /system                   erfos    ro,barrier=1,discard                                 wait,slotselect,avb,first_stage_mount
 /dev/block/platform/soc/1d84000.ufshc/by-name/system                    /system                   ext4    ro,barrier=1,discard                                 wait,slotselect,avb,first_stage_mount
 /dev/block/platform/soc/1d84000.ufshc/by-name/vendor                    /vendor                   erfos    ro,barrier=1,discard                                 wait,slotselect,avb,first_stage_mount
+/dev/block/platform/soc/1d84000.ufshc/by-name/vendor                    /vendor                   ext4    ro,barrier=1,discard                                 wait,slotselect,avb,first_stage_mount
 /dev/block/platform/soc/1d84000.ufshc/by-name/cache                     /cache                    ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered  wait,check
 /dev/block/platform/soc/1d84000.ufshc/by-name/userdata                  /data                     ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered  wait,check,fileencryption=ice,quota,reservedsize=512M
 /dev/block/platform/soc/1d84000.ufshc/by-name/efs                       /mnt/vendor/efs           ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered  wait,check
