@@ -175,9 +175,6 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     tinymix
 
-# APEX
-PRODUCT_COMPRESSED_APEX := false
-
 # Touch HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung
@@ -197,5 +194,9 @@ endif
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUIGoogle
 
 $(call inherit-product, vendor/samsung/sdm845-common/sdm845-common-vendor.mk)
