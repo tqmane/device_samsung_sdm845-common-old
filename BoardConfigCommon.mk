@@ -128,6 +128,7 @@ TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TARGET_USERIMAGES_USE_F2FS := true
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
