@@ -201,6 +201,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # APNs
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/apns/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml
+    $(LOCAL_PATH)/configs/apns/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 
 $(call inherit-product, vendor/samsung/sdm845-common/sdm845-common-vendor.mk)
