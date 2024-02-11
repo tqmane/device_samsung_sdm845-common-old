@@ -106,7 +106,7 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
-persist.vendor.camera.privapp.list=com.riseupgames.proshot2,org.codeaurora.snapcam,com.samsung.android.scan3d,org.lineageos.aperture
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.samsung.android.scan3d,org.lineageos.aperture
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
