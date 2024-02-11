@@ -254,9 +254,21 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 29
 PRODUCT_COPY_FILES += \
      $(COMMON_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
-# Wi-Fi
+# WiFi
 PRODUCT_PACKAGES += \
-    WifiOverlay
+    android.hardware.wifi-service \
+    hostapd \
+    libwifi-hal-qcom \
+    libwpa_client \
+    WifiOverlay \
+    wifi-mac-generator \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Aod & DT2W test
 PRODUCT_COPY_FILES += \
